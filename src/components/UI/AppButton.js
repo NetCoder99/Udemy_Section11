@@ -2,7 +2,7 @@ import classes from './AppButton.module.css';
 
 const AppButton = (props) => {
     return (
-        <button className={classes.AppButton}>
+        <button className={classes.AppButton} onClick={props.onClick}>
             {props.children}
         </button>
     );
